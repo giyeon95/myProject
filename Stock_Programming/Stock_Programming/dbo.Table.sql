@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Table]
+(
+	[Id] VARCHAR(15) NOT NULL PRIMARY KEY, 
+    [Passward] VARCHAR(15) NULL
+)
