@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="3dp">
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="# 유용한 사이트"
+                    android:textColor="#ff7170"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageButton
+                                android:id="@+id/airbnb"
+                                android:layout_width="200dp"
+                                android:layout_height="95dp"
+                                android:layout_marginRight="5dp"
+                                android:onClick="fun_Click"
+                                android:background="#FFFFFF"
+                                android:paddingBottom="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:text="에어비앤비"
+                                android:textColor="#000000"
+                                android:textSize="16dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:text="공유경제시스템에 기반한 숙박어플"
+                                android:textColor="#000000"
+                                android:textSize="8dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageButton
+                                android:id="@+id/staydo"
+                                android:layout_width="200dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:onClick="fun_Click"
+                                android:background="#FFFFFF"
+                                android:paddingBottom="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:text="스테이두"
+                                android:textColor="#000000"
+                                android:textSize="16dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:text="현지인과 이색경험, 해외 가정생활"
+                                android:textColor="#000000"
+                                android:textSize="8dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/call"
+                android:layout_below="@+id/site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f1f1f1"
+                android:paddingTop="10dp">
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="# 한국대사관"
+                    android:textColor="#ff7170"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/funLinear1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <ImageButton
+                                android:id="@+id/korea"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF"
+                                android:onClick="fun_Click"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 대한민국"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <ImageButton
+                                android:id="@+id/china"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:onClick="fun_Click"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 중국"/>
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/japan"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF"
+                                android:onClick="fun_Click"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 일본"/>
+                        </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/funLinear2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_below="@id/funLinear1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <ImageButton
+                                android:id="@+id/uk"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF"
+                                android:onClick="fun_Click"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 영국"/>
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <ImageButton
+                                android:id="@+id/denmark"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:onClick="fun_Click"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 덴마크"/>
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/norway"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF"
+                                android:onClick="fun_Click"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 호주"/>
+                        </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/funLinear3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/funLinear2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/usa"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF"
+                                android:onClick="fun_Click"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 미국"/>
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/canada"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:onClick="fun_Click"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 캐나다"/>
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/maksico"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:scaleType="fitCenter"
+                                android:background="#FFFFFF" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#E85B5A"
+                                android:text="# 맥시코"/>
+                        </LinearLayout>
+
+
+            </LinearLayout>
+
+
+                    </RelativeLayout>
+                </ScrollView>
+            </LinearLayout>
+
+</RelativeLayout>

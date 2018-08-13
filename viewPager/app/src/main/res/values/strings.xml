@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tridiary</string>
+    <string name="tab_text_1">Make Plan</string>
+    <string name="tab_text_2">Diary</string>
+    <string name="tab_text_3">Communication</string>
+    <string name="tab_text_4">Convenient</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

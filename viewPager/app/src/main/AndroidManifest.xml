@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.giyeo.viewpager">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tridiarylogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tridiarylogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".addActivity"/>
+        <activity android:name=".subGoogle"/>
+        <activity android:name=".modifyActivity"/>
+        <activity android:name=".SetImageActivity" android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"/>
+        <activity android:name=".UserStatus" android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"/>
+        <activity android:name=".MakeChatRoom" android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"/>
+        <activity android:name=".RealChat"/>
+        <activity android:name=".JoinUserList"/>
+        <activity android:name=".AlbumActivity"/>
+
+
+
+
+
+
+
+
+
+        <uses-library android:name="com.google.android.maps"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCm2xEepYP-TayKKYjW6rTqkvfi0D9XrTM"/>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+    </application>
+
+</manifest>

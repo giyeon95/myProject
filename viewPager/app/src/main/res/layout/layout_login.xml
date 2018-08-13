@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/parentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/testloginback"
+     >
+
+        <RelativeLayout
+            android:id="@+id/textlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   여행을 기록과 만남으로..\n      Trip + diary\n         Tridiary"
+                    fontPath="HoonWhitecatR.ttf"
+                    android:textSize="40sp"
+                    android:textColor="#ed83e3"
+                    android:alpha="0.8"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+            <com.kakao.usermgmt.LoginButton
+                android:id="@+id/buttonlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="80dp"
+                />
+
+
+        <LinearLayout
+            android:id="@+id/textlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonlayout"
+            android:layout_marginTop = "50dp"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
