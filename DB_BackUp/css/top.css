@@ -1,0 +1,99 @@
+@charset "utf-8";		
+
+	#topMenu {
+		height: 30px;
+		width: 1280px;
+		text-align:center;
+	}
+
+
+
+	#topMenu ul li {
+		list-style: none;
+		color: white;
+		background-color: #2d2d2d;
+		float: left; 
+		line-height: 30px;
+		vertical-align: middle;
+		align-self:center;
+	}
+	
+	#topMenu .menuLink { 
+		text-decoration:none;
+		color: white; 
+		display: block; 
+		width: 200px;
+		text-align:center;
+		font-size: 12px;
+		font-weight: bold;
+		font-family: "Trebuchet MS", Dotum, Arial;
+	}
+
+	#topMenu .title {
+		line-height: 60px;
+		text-decoration:none;
+		color: black;
+		font-family: "Trebuchet MS", Dotum, Arial;
+	}
+
+	#topMenu .menuLink:hover {
+		color: red;
+		background-color: #4d4d4d;
+	}
+	
+
+
+	#homemain {
+		height:30px;
+		width:1280px;
+		margin-left: 50px;
+		margin-top: 80px;
+	}
+
+	span {
+		margin-left:30dp;
+	}
+
+	
+	#sign {
+		text-decoration:none;
+		font-weight: bold;
+		font-family: "Trebuchet MS", Dotum, Arial;
+
+		
+ 		list-style: none;
+		color: white;
+		background-color: #33ccff;
+		border-radius: 15px 15px 15px 15px;
+		float: left; 
+		line-height: 30px;
+		vertical-align: middle;
+		align-self:center;
+		padding-left:10px;
+		padding-right:10px;
+		font-size: 12px;
+		position: relative;
+    	left: 10px;
+	}
+
+	
+	#login {
+		text-decoration:none;
+		font-weight: bold;
+		font-family: "Trebuchet MS", Dotum, Arial;
+
+		
+ 		list-style: none;
+		color: white;
+		background-color: #33ccff;
+		border-radius: 15px 15px 15px 15px;
+		float: left; 
+		line-height: 30px;
+		vertical-align: middle;
+		align-self:center;
+		padding-left:10px;
+		padding-right:10px;
+		font-size: 12px;
+		position: relative;
+    	left: 20px;
+	}

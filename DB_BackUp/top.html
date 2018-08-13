@@ -1,0 +1,62 @@
+﻿<html>
+    <head>
+    	<link rel="stylesheet" href="./css/top.css" type="text/css">
+    	<script>
+	
+	function Title() {
+		window.location.replace('./index.php');
+		//<?php header("Location: ./index.php"); ?>
+	}
+	
+	function Home() {
+		window.location.replace('./employeesMain.php');
+		//<?php header("Location: ./index.php"); ?>
+	}
+	function Priview() {
+		window.location.replace('./payManagementMain.php');
+	}
+	function Main() {
+		window.location.replace('./orderManagementMain.php');
+	}
+	function Context() {
+		window.location.replace('./selectNoGiveEmployee.php');
+		
+	}
+	function Communication() {
+		
+		window.location.replace('./selectYesGiveEmployee.php');
+	}
+	function About() {
+	
+		window.location.replace('./MasterInfo.php');
+	}
+</script>
+
+
+        <body>
+        <center>
+		<nav id="topMenu">
+		<a class="title" onclick="Title();"><h1>Giyeon's 매장 관리 Web</h1></a>
+		<ul>
+			<li><a class="menuLink" href="#"  onClick="Home();">직원 관리</a></li>
+			<li><a class="menuLink" href ="#" onClick="Priview();">일당 관리</a></li>
+			<li><a class="menuLink" href ="#" onClick="Main();">발주 관리</a></li>
+			<li><a class="menuLink" href ="#" onClick="Context();">미납 알바비 조회</a></li>
+			<li><a class="menuLink" href ="#" onClick="Communication();">지출 알바비 조회</a></li>
+			<li><a class="menuLink" href ="#" onClick="About();">내 정보 조회</a></li>	
+		</ul>
+	</nav>
+<br>
+
+	<div><a id="sign" href="SignUp.php" >회원가입</a>
+
+		<a id="login" href="login.php">로그인</a></div>
+
+
+
+            
+        </body>
+
+    </head>
+
+</html>
