@@ -255,7 +255,7 @@
                 '<div class="divLine2"></div>'+
                 '<div class="textContainer">'+item.showWindowHTML+'</div>'+
                 '<div class="divLine"></div>'+
-                '<div class="phoneNum">Tel : '+item.Tel+'&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;가격(년세) :'+item.price+'만원</div>'
+                '<div class="phoneNum">Tel : '+item.Tel+'&emsp;&emsp;<a style='+'padding:2px; border-radius:5px;'+' href='+'./googleMapReple/index.php?roomName='+item.roomName+'>후기확인</a>&emsp;&emsp;가격(년세) :'+item.price+'만원</div>'
                 '</div>';
 
             let infowindow = new google.maps.InfoWindow({
@@ -338,7 +338,7 @@
             if(item.category=="park") { parkHtml.push('<p data-map-num="'+i+'" data-map-full="'+item.fullAddress+'">'+i+' : '+ item.roomName +'</p>'); }
             if(item.category=="restaurants") { restaurantHtml.push('<p data-map-num="'+i+'" data-map-full="'+item.fullAddress+'">'+i+' : '+ item.roomName +'</p>'); }
             if(item.category=="publicTransportation") { publicTransportationHtml.push('<p data-map-num="'+i+'" data-map-full="'+item.fullAddress+'">'+i+' : '+ item.roomName +'</p>'); }
-            if(item.category=="shoppingCenter") { shoppingCenterHtml.push('<p data-map-num="'+i+'" data-map-full="'+item.fullAddress+'">'+i+' : '+ item.displayName +'</p>'); }
+            if(item.category=="shoppingCenter") { shoppingCenterHtml.push('<p data-map-num="'+i+'" data-map-full="'+item.fullAddress+'">'+i+' : '+ item.roomName +'</p>'); }
         });
 
             schoolHtml.push('</div>');
